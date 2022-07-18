@@ -25,11 +25,11 @@ if (!isset($_SESSION['user_name'])) {
                 <img src="../img/Olivia (1).png" alt="">
                 <div class="navigation">
                     <ul class="menu">
-                        <li><a href="#">About</a></li>
+                        <li><a href="./about.php">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="#">Store</a></li>
                         <li><a href="#">Cart</a></li>
-                        <li><a href="#">F&Q</a></li>
+                        <li><a href="./f&q.php">F&Q</a></li>
                         <li><a href="./logout.php">Log Out</a></li>
                         <li><a href="#">Hi <?php echo $_SESSION['user_name'] ?></a></li>
                     </ul>
