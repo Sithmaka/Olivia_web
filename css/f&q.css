@@ -1,0 +1,126 @@
+*
+body{
+    font-family:'Verdana';
+    padding: 0;
+    margin: 0;
+    background-color: #7daeef;
+}
+.header{
+    font-family: 'Sansita Swashed', cursive;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+.navigation ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+.navigation ul li:hover{
+    background-color: #004AAD;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.link .item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 40px 20px 40px 20px;
+}
+
+@media(max-width: 600px){
+    .link .item{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.card{
+    position: relative;
+    width: 420px;
+    height: 250px;
+    background-color: #528bd4;
+    color: #242329;
+    text-align: center;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+.card-data{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-250px);
+    transition: transform .5s;
+}
+.card-Q{   
+    transition: transform .25s .35s;
+}
+.card-title{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+    background-color: #004AAD;
+    margin-top: 25px;
+}
+.card-discription{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.card-btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #242329;
+    background-color: #fff;
+    transition: background-color.25s;
+}
+.card-btn:hover{
+    background-color: #242329;
+    color: #fff;
+}
+.card:hover .card-data{
+    transform: translateY(0px);
+}
+.card:hover .card-Q{
+    transform: translateX(420px);
+    transition-delay: 0s;
+}
+
+.touch{
+    background-color: azure;
+    padding-top: 10px;
+    text-align: center;
+}
+.break{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 80px;
+    text-align: center;
+}
+@media(max-width: 600px){
+    .break{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 80px;
+        text-align: center;
+    }
+}
+
+.touch .footer{
+    background-color: #004AAD;
+    text-align: center;
+    padding: 1px 0px;
+    color:white;
+}
