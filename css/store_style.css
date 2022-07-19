@@ -1,0 +1,293 @@
+* body {
+    font-family: 'Verdana';
+    padding: 0;
+    margin: 0;
+}
+
+.main-header {
+    background: url(../img/store/store_bg.jpg);
+    background-size: cover;
+    background-position: fixed;
+    height: 100vh;
+}
+
+.main-header img {
+    width: 15%;
+}
+
+.main-header h2 {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Informal Roman;
+    font-size: 80px;
+}
+
+.rect {
+    size: 300px;
+    width: 480px;
+    height: 250px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.101655) 53.3%, rgba(163, 71, 71, 0) 91.95%), linear-gradient(0deg, rgba(112, 45, 45, 0.2), rgba(112, 45, 45, 0.2)), #000000;
+    box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    position: relative;
+    left: 35%;
+    top: 40%;
+}
+
+.header {
+    font-family: 'Sansita Swashed', cursive;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.navigation ul li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.navigation ul li:hover {
+    background-color: #004AAD;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+
+/* end of navigation hear*/
+
+.card {
+    position: relative;
+    width: 420px;
+    height: 250px;
+    background-color: #528bd4;
+    color: #242329;
+    text-align: center;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+
+.card-data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-250px);
+    transition: transform .5s;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s .35s;
+}
+
+.card-title {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    background-color: #004AAD;
+    margin-top: 25px;
+}
+
+.card-discription {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.card-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #242329;
+    background-color: #fff;
+    transition: background-color.25s;
+}
+
+.card-btn:hover {
+    background-color: #242329;
+    color: #fff;
+}
+
+.card:hover .card-data {
+    transform: translateY(0px);
+}
+
+.card:hover .card-img {
+    transform: translateX(420px);
+    transition-delay: 0s;
+}
+
+
+/* start of get in touch hear */
+
+.touch {
+    background-color: azure;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.break {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 80px;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .break {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 80px;
+        text-align: center;
+    }
+}
+
+.touch .footer {
+    background-color: #004AAD;
+    text-align: center;
+    padding: 1px 0px;
+    color: white;
+}
+
+.line-l {
+    width: 30%;
+    height: 2px;
+    background-color: #000000;
+    position: relative;
+    top: 70px;
+    left: 81px;
+}
+
+.category-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    left: 38%;
+    top: 39px;
+}
+
+.line-r {
+    width: 30%;
+    height: 2px;
+    background-color: #000000;
+    position: relative;
+    top: 11px;
+    left: 850px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    position: relative;
+    top: 60px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+}
+
+.firstitem {
+    background: url(../img/store/t_mens.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity: 80%;
+}
+
+.title-rec {
+    width: 100%;
+    height: 50px;
+    opacity: 50%;
+    background-color: #000000;
+}
+
+.t-cat {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.title-content {
+    position: relative;
+    top: 60%;
+}
+
+.seconditem {
+    background: url(../img/store/shirts_men.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity: 80%;
+}
+
+.thirditem {
+    background: url(../img/store/kids.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity: 80%;
+}
+
+.fourthitem {
+    background: url(../img/store/t_women.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity: 80%;
+}
+
+.fifthitem {
+    background: url(../img/store/dresses.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity: 80%;
+}
+
+.sixthitem {
+    background: url(../img/store/tops.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity: 80%;
+}
